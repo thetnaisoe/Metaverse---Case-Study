@@ -1772,8 +1772,42 @@
         "cells": [
           {
             "position": {
+              "x": 249.99999999999818,
+              "y": 130.00000000000432
+            },
+            "size": {
+              "width": 850,
+              "height": 470
+            },
+            "attrs": {
+              "label": {
+                "text": "Metaverse backend (trusted)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "0a3fb394-bf76-4721-8da4-a4ce7fa882c7",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Metaverse backend (trusted)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "5ac8e266-8e81-4bbc-9462-5d20b6a0b137"
+              ],
+              "containedElements": [
+                "deff3183-e537-4a25-a585-361a5e750a63",
+                "9ca856e8-1518-4b26-b139-b688c1829c39",
+                "38e7d7eb-9e90-48bb-9334-f09952cbc471"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 610,
-              "y": 70
+              "y": 20
             },
             "size": {
               "width": 112.5,
@@ -1784,8 +1818,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1882,9 +1916,47 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9acb35f7-c0e0-4b86-b5bd-77f846b03f6f",
+                  "title": "Forged friend requests",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Attacker forges friend requests or responses on behalf of another user.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                },
+                {
+                  "id": "bcb6c880-20bd-4b3d-b7ee-814061883c45",
+                  "title": "Denial of sent friend request",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "A user denies having sent an abusive or unwanted friend request due to lack of non-repudiation logging.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2009,7 +2081,7 @@
           },
           {
             "position": {
-              "x": 380,
+              "x": 420,
               "y": 490
             },
             "size": {
@@ -2133,8 +2205,8 @@
           },
           {
             "position": {
-              "x": 854,
-              "y": 470
+              "x": 834,
+              "y": 490
             },
             "size": {
               "width": 120,
@@ -2286,7 +2358,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "0a3fb394-bf76-4721-8da4-a4ce7fa882c7"
+              ]
             },
             "labels": [
               "Friend request sent; notification returned"
@@ -2377,7 +2451,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "store relationship",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2391,7 +2465,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "store relationship"
             ],
             "id": "11f219bc-7af7-4231-b50f-7c2d738dfb36",
             "source": {
@@ -2401,81 +2475,6 @@
             "target": {
               "cell": "38e7d7eb-9e90-48bb-9334-f09952cbc471",
               "port": "cac6c817-5592-4ab0-89d6-f3dcfe24d119"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           }
         ]
@@ -2483,6 +2482,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 29
+    "threatTop": 31
   }
 }
