@@ -166,13 +166,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -299,7 +292,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -320,15 +314,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "59ca1b1c-60c5-4633-b082-03b30f1a6052",
+                  "title": "Registration data intercepted in transit",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker intercepts and modifies registration data (e.g. email, password) while it travels from the user's client to the backend, e.g. via a man-in-the-middle attack on an unsecured connection.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "41856c0d-2c16-4d7f-894c-ac790cc7cdaf"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "registration data\n"
@@ -772,6 +785,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 12
   }
 }
