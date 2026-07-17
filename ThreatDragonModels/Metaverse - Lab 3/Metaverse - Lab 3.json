@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "41856c0d-2c16-4d7f-894c-ac790cc7cdaf",
             "zIndex": -1,
+            "id": "41856c0d-2c16-4d7f-894c-ac790cc7cdaf",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Metaverse backend (trusted)",
@@ -72,6 +72,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -155,7 +156,6 @@
               ]
             },
             "id": "6882dabd-c782-4714-b350-8a77cffa19bc",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User\n",
@@ -189,6 +189,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -272,7 +273,6 @@
               ]
             },
             "id": "a4fab7aa-6367-4b5d-af7b-3e6ef8a3a86f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "P1 - Register account",
@@ -366,6 +366,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -449,7 +450,6 @@
               ]
             },
             "id": "eded065f-d54f-469d-99ea-a9c83be62929",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "D2 - Profile store",
@@ -536,6 +536,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -619,7 +620,6 @@
               ]
             },
             "id": "919f7a77-d1bb-4843-b3ea-386ac4cfc86c",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "D1 - Credential store",
@@ -705,6 +705,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 9
   }
 }
