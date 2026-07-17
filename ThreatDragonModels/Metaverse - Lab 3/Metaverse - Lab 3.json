@@ -510,7 +510,13 @@
             "target": {
               "cell": "eded065f-d54f-469d-99ea-a9c83be62929",
               "port": "da5b7dff-4c76-46e8-86b0-f03c1d726875"
-            }
+            },
+            "vertices": [
+              {
+                "x": 830,
+                "y": -270
+              }
+            ]
           },
           {
             "position": {
@@ -640,7 +646,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -661,13 +668,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "38871240-27cc-4292-8273-227e12b9422d",
+                  "title": "Credential data exposed in internal transit",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "If the internal channel between the registration process and the credential store is unencrypted or overly permissive, an attacker with internal network access could intercept credential data before it's hashed and stored.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Store Credentials"
@@ -680,6 +706,26 @@
             "target": {
               "cell": "919f7a77-d1bb-4843-b3ea-386ac4cfc86c",
               "port": "da5b7dff-4c76-46e8-86b0-f03c1d726875"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": -300
+              },
+              {
+                "x": 570,
+                "y": -260
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           }
         ]
@@ -705,6 +751,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 10
   }
 }
