@@ -963,8 +963,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1061,9 +1061,47 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "1dd7197e-efd7-4fe9-af67-5190661b078e",
+                  "title": "Credential stuffing / brute-force login",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "An attacker guesses or reuses leaked credentials to impersonate a legitimate user.",
+                  "mitigation": "Rate limiting, account lockout after repeated failures, multi-factor authentication.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "0dbe5ed8-ee7b-4371-bb5a-1a53dc7060b8",
+                  "title": "Denial of login/session action",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "A user could deny having logged in or performed actions during a session, complicating dispute resolution.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1604,6 +1642,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 22
   }
 }
