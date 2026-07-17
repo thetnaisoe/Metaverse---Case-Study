@@ -917,8 +917,42 @@
         "cells": [
           {
             "position": {
+              "x": 220,
+              "y": -490.0000000000003
+            },
+            "size": {
+              "width": 930,
+              "height": 440
+            },
+            "attrs": {
+              "label": {
+                "text": "Metaverse backend (trusted)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "29c1c529-186b-4855-86b2-c282ff91de6d",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Metaverse backend (trusted)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "77a93c2a-96f1-487a-8a4f-ad9bff875e54"
+              ],
+              "containedElements": [
+                "29a50128-2985-4791-be3b-949182c74dc5",
+                "4e8cb4ef-c35f-4954-89aa-bfa499edd066",
+                "377d3503-3b4b-412c-a426-92792f47d5d4"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 620,
-              "y": -550
+              "y": -600
             },
             "size": {
               "width": 112.5,
@@ -1539,7 +1573,9 @@
               "isPublicNetwork": true,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "29c1c529-186b-4855-86b2-c282ff91de6d"
+              ]
             },
             "labels": [
               "Login request; returns session token"
