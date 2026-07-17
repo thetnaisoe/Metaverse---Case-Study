@@ -2254,6 +2254,52 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Friend request sent; notification returned",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Friend request sent; notification returned"
+            ],
+            "id": "5ac8e266-8e81-4bbc-9462-5d20b6a0b137",
+            "source": {
+              "x": 670,
+              "y": 130
+            },
+            "target": {
+              "cell": "deff3183-e537-4a25-a585-361a5e750a63",
+              "port": "6a350295-56f5-49f5-9c9d-c4a04fe79443"
+            }
           }
         ]
       }
